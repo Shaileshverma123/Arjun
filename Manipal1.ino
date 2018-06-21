@@ -50,7 +50,7 @@ void loop()
   if(count%k==0)
   {
     Serial.print("brk");
-    Serial.print("{\"Lamp10\":{");
+    Serial.print("{\"Lamp11\":{");
     Serial.print("\"Temperature\":");
     Serial.print(Tc-20); 
     Serial.print(",\"Count\":");
@@ -114,7 +114,9 @@ void loop()
   {
     m=dataw[1];
   }
-  digitalWrite(6,m);
+  //digitalWrite(6,m);
+  
+  
 
   //////////////////////////////////////////////////////////////////////////////eeprom write
   //  Serial.print(",\"Writing:\"");
